@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  dm.apigateway:
+    image: ${DOCKER_REGISTRY-}dmapigateway
+    build:
+      context: .
+      dockerfile: src/ApiGateway/DM.ApiGateway/Dockerfile
